@@ -71,7 +71,7 @@ module Brcobranca
             ret << monta_detalhe(pagamento, contador)
           end
           ret << monta_trailer(contador + 1)
-          retorno = ret.join("\n")
+          retorno = ret.join("\r\n")
           retorno.to_ascii.upcase
         end
 
