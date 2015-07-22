@@ -18,7 +18,8 @@ RSpec.describe Brcobranca::Retorno::Cnab400::Bradesco do
     pagamento = pagamentos.first
     expect(pagamento.agencia_com_dv).to eql('01467-2')
     expect(pagamento.cedente_com_dv).to eql('0019669P')
-    expect(pagamento.nosso_numero).to eql('000000000303')
+    expect(pagamento.nosso_numero).to eql('00000000030')
+    expect(pagamento.digito_nosso_numero).to eql('3')
     expect(pagamento.carteira).to eql('009')
     expect(pagamento.data_vencimento).to eql('250515')
     expect(pagamento.valor_titulo).to eql('0000000145000')
